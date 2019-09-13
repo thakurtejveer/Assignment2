@@ -12,50 +12,38 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 </head>
-
-<body style="padding:70px;">
+<!--navbar started-->
+<body style="padding:70px">
+    <div class="container" id="min">
     <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-                <img src="images/logo.jpg" style="height:40px;margin-right:20px;" class="image-responsive pull-left"/>
-                <h2 class="head-responsive pull-left" style="color:azure;">Sports Galore</h2>
-                <form class="navbar-form navbar-center" role="search">
-                        <div class="form-group">
-                          <input type="text" class="form-control" style="padding-right:10px;" placeholder="Search">
-                        </div>
-                        <button type="submit" class="btn btn-default">Go</button>
-                      </form>
-                    <div class="collapse navbar-collapse" id="mainNavBar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <!-- main menu -->
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Sports<span class="caret"></span></a></li>
-                        <li><a href="#">Players</a></li>
-                        <li><a href="#">Prizes</a></li>
-                    </ul>
-                    </div>
-                <!-- <div class="col-sm-2" id="features">
-                    <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user">
-                                    My Account</span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Pictures <span class="glyphicon glyphicon-camera"></span></a></li>
-                                <li><a href="#">Achievements</a></li>
-                                <li><a href="#">Certificates<span class="glyphicon glyphicon-certificate"></span></a></li>
-                                <li><a href="#">Log out</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div> -->
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
+        <a class="navbar-brand" href="#"><img src="images/logo.jpg" id="logo" alt="Logo" style="width:10%"></a>
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#NavBarCollapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Sports Galore</a>
+        </div>
+        <div class=" collapse navbar-collapse  navHeaderCollapse" id="NavBarCollapse">
+        <ul class="nav navbar-nav pull-right">
+            <li class="active"><a href="#">Home</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Sports<span
+                class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Athletics</a></li>
+                <li><a href="#">Cricket</a></li>
+                <li><a href="#">Football</a></li>
+                <li><a href="#">Hockey</a></li>
+                <li><a href="#">Volleyball</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Players</a></li>
+            <li><a href="#">Prizes</a></li>
+        </ul>
         </div>
     </nav>
+    </div>
     <!--start of carousel-->
     <div class="container">
         <div class="nav navbar">
@@ -89,7 +77,7 @@
     <!--end of carousel-->
     <!--Features start , having important information about sports-->
     <div class="container">
-        <div class="row" id="features" style="background:rgb(157, 157, 241)">
+        <div class="row" id="features">
             <div class="col-sm-3" id=features>
                 <h2>What is Sports?</h2>
                 <p>A sport is commonly defined as an athletic activity that involves a degree of competition, such as volleyball or basketball. Some games and many kinds of racing are called sports. A professional at a sport is called an athlete. Many people play sports with their friends.</p>
